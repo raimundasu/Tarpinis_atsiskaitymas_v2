@@ -1,0 +1,30 @@
+.container-2 {
+  .line {
+    width: 1fr;
+    display: flex;
+    flex-flow: row;
+
+    .col {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      gap: 10px;
+      text-align: left;
+      padding: 50px;
+    }
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  .line:nth-of-type(2) {
+    flex-flow: row-reverse;
+  }
+
+  p {
+    color: $text-color;
+  }
+}
